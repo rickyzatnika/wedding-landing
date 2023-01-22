@@ -68,7 +68,7 @@ const PricingCard = () => {
                 <p className="capitalize text-[#e6e6e6]">Qr-code System</p>
               </div>
             </div>
-            <div className="absolute bottom-0 w-full p-2 flex items-center justify-between">
+            <div className="relative lg:absolute bottom-0 w-full p-2 flex items-center justify-between">
               <p className="p-2 text-white poppins font-semibold capitalize">
                 harga promo :
               </p>
