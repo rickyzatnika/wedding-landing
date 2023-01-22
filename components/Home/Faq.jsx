@@ -18,7 +18,7 @@ const Faq = () => {
         className=" w-full h-full px-4 lg:px-0 lg:w-4/6 mx-auto my-10 lg:my-24 pb-40"
       >
         {" "}
-        <div className="mb-14 text-center border-b pb-2 border-indigo-300">
+        <div className="mb-14 text-center">
           <h1 className="text-center text-2xl font-semibold text-[#414141]">
             {" "}
             FAQ
@@ -260,8 +260,8 @@ const Faq = () => {
                 URL (Uniform Resource Locator) yang mana nantinya itu adalah
                 alamat dari web undangan anda, contoh{" "}
                 <span className="italic">`https://domain-anda.com`</span>. Jika
-                memilih paket undangan dengan kode unik, hasilnya akan seperti
-                ini{" "}
+                anda memilih paket undangan dengan kode unik, hasilnya akan
+                seperti ini{" "}
                 <span className="italic">
                   `https://domain-anda.com/kode-unik`
                 </span>

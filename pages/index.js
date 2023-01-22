@@ -7,6 +7,7 @@ import {
   WhyChooseUs,
   CounterAnimate,
   Faq,
+  PricingCard,
 } from "../components";
 
 export default function Home() {
@@ -37,6 +38,7 @@ export default function Home() {
       <Intro />
       <WhyChooseUs />
       <CounterAnimate />
+      <PricingCard />
       <Faq />
     </>
   );
