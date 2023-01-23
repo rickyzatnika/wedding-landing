@@ -93,7 +93,7 @@ const ContactForm = () => {
                     <HiOutlineMail />
                   </span>
                   <span className="text-sm py-2 text-indigo-500">
-                    rickyzatnika@gmail.com
+                    rickyzatnika91@gmail.com
                   </span>
                 </div>
                 <div className="w-full flex items-center gap-1">
