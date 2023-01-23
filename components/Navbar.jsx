@@ -47,11 +47,13 @@ const Navbar = () => {
       >
         <div
           onClick={() => setShowMenus(false)}
-          className="relative z-50 text-3xl lg:text-4xl text-indigo-800 tracking-tighter"
+          className="relative z-50  text-indigo-800 tracking-tighter"
         >
-          <Link href="/" passHref>
-            <span className="font-bold text-indigo-600">d</span>Books
+          <Link href="/" passHref className="text-3xl lg:text-4xl">
+            <span className="font-bold  text-indigo-600">d</span>
+            Books
           </Link>
+          <p className="pl-1 text-sm text-indigo-800">Undangan Digital</p>
         </div>
 
         <ul
@@ -68,10 +70,10 @@ const Navbar = () => {
             transition={{ duration: 0.4, delay: 0.2 }}
             className="text-xl lg:text-base lg:text-md poppins font-semibold lg:font-normal text-[#555] hover:text-indigo-500 transition-all duration-200 ease-linear antialiased "
           >
-            <Link href="features" passHref>
+            <Link href="#features" passHref>
               <span
                 className={
-                  router.pathname === "/features"
+                  router.pathname === "#features"
                     ? "text-indigo-500  lg:border-b border-indigo-500"
                     : ""
                 }
@@ -89,7 +91,7 @@ const Navbar = () => {
             <Link href="portfolio" passHref>
               <span
                 className={
-                  router.pathname === "/portfolio"
+                  router.pathname === "portfolio"
                     ? "text-indigo-500 lg:border-b border-indigo-500"
                     : ""
                 }
@@ -104,10 +106,10 @@ const Navbar = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-xl pr-0 lg:pr-8 lg:text-base  lg:text-md poppins font-semibold lg:font-normal text-[#555] hover:text-indigo-500 transition-all duration-200 ease-linear antialiased"
           >
-            <Link href="pricing" passHref>
+            <Link href="#pricing" passHref>
               <span
                 className={
-                  router.pathname === "/pricing"
+                  router.pathname === "#pricing"
                     ? "text-indigo-500  lg:border-b border-indigo-500"
                     : ""
                 }

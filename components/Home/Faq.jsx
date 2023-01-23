@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -12,7 +13,10 @@ const Faq = () => {
 
   return (
     <>
-      <div
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.4 }}
         id="accordion-open"
         data-accordion="open"
         className=" w-full h-full px-4 lg:px-0 lg:w-4/6 mx-auto my-10 lg:my-24 pb-40"
@@ -336,7 +340,133 @@ const Faq = () => {
             </div>
           </div>
         </div>
-        <div className="text-gray-500 py-4 flex gap-2">
+        {/* Accordion Body 5 */}
+        <div>
+          <h2 id="accordion-open-heading-5">
+            <button
+              onClick={() => toggleAccordion("accordion-open-body-5")}
+              type="button"
+              className="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+              data-accordion-target="#accordion-open-body-5"
+              aria-expanded="false"
+              aria-controls="accordion-open-body-5"
+            >
+              <span className="flex items-center">
+                <svg
+                  className="w-5 h-5 mr-2 shrink-0"
+                  fill="#7286D3"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>{" "}
+                Berapa lama proses pembuatan web undangan ?
+              </span>
+              <svg
+                data-accordion-icon
+                className={` w-6 h-6 shrink-0 ${
+                  isOpen && activeId === "accordion-open-body-5"
+                    ? "rotate-180 "
+                    : "rotate-0 "
+                }`}
+                fill="#7286D3"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-open-body-5"
+            className={` ${
+              isOpen && activeId === "accordion-open-body-5"
+                ? "block"
+                : "hidden"
+            }`}
+            aria-labelledby="accordion-open-heading-5"
+          >
+            <div className="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
+              <p className="mb-2 text-gray-500 dark:text-gray-400 leading-relaxed">
+                Estimasi waktu pengerjaan ± 1-2 hari{" "}
+                <span className="italic">(tidak terrmasuk revisi)</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* Accordion Body 6 */}
+        <div>
+          <h2 id="accordion-open-heading-6">
+            <button
+              onClick={() => toggleAccordion("accordion-open-body-6")}
+              type="button"
+              className="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+              data-accordion-target="#accordion-open-body-6"
+              aria-expanded="false"
+              aria-controls="accordion-open-body-6"
+            >
+              <span className="flex items-center">
+                <svg
+                  className="w-5 h-5 mr-2 shrink-0"
+                  fill="#7286D3"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>{" "}
+                Apakah bisa menggunakan nomor sendiri jika menggunakan fitur
+                send whatsapp ?
+              </span>
+              <svg
+                data-accordion-icon
+                className={` w-6 h-6 shrink-0 ${
+                  isOpen && activeId === "accordion-open-body-6"
+                    ? "rotate-180 "
+                    : "rotate-0 "
+                }`}
+                fill="#7286D3"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-open-body-6"
+            className={` ${
+              isOpen && activeId === "accordion-open-body-6"
+                ? "block"
+                : "hidden"
+            }`}
+            aria-labelledby="accordion-open-heading-6"
+          >
+            <div className="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
+              <p className="mb-2 text-gray-500 dark:text-gray-400 leading-relaxed">
+                Sayangnya tidak :( <br />
+                Fitur send whatsapp otomatis hanya bisa di setting untuk satu
+                nomor saja, yaitu nomor khusus pada system nya.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="text-gray-500 py-4 flex flex-wrap gap-2">
           <p>Masih ada pertanyaan lain ?</p>
           <Link
             target="_blank"
@@ -346,7 +476,7 @@ const Faq = () => {
             Hubungi Kami
           </Link>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

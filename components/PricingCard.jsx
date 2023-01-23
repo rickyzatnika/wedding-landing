@@ -1,4 +1,4 @@
-import React from "react";
+import { motion } from "framer-motion";
 import Card from "./Card";
 import {
   IoMdCheckmarkCircleOutline,
@@ -8,11 +8,21 @@ import {
 const PricingCard = () => {
   return (
     <>
-      <div className="w-full h-full pb-40 px-4 lg:px-14 ">
-        <h1 className="text-3xl lg:text-4xl text-center text-gray-600 capitalize py-10 lg:py-20">
+      <div id="pricing" className="w-full h-full pb-40 px-4 lg:px-14 ">
+        <motion.h1
+          initial={{ opacity: 0, y: -100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="text-3xl lg:text-4xl text-center text-gray-600 capitalize py-10 lg:py-20"
+        >
           paket dan harga
-        </h1>
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        </motion.h1>
+        <motion.div
+          initial={{ opacity: 0, y: 90 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, delay: 0.4 }}
+          className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
+        >
           <Card>
             <div className="w-full px-2 py-5">
               <div className="flex items-center justify-between px-10 p-6 ">
@@ -235,7 +245,7 @@ const PricingCard = () => {
               </p>
             </div>
           </Card>
-        </div>
+        </motion.div>
       </div>
     </>
   );

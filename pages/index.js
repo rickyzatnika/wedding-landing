@@ -8,6 +8,7 @@ import {
   CounterAnimate,
   Faq,
   PricingCard,
+  ContactForm,
 } from "../components";
 
 export default function Home() {
@@ -40,6 +41,7 @@ export default function Home() {
       <CounterAnimate />
       <PricingCard />
       <Faq />
+      <ContactForm />
     </>
   );
 }

@@ -11,13 +11,13 @@ const Headers = () => {
               Kelola tamu dan kirim undangan menjadi lebih praktis, simple dan
               Mudah
             </h1>
-            <p className="antialiased text-lg text-gray-500">
+            <p className="antialiased text-lg text-gray-600 px-1">
               Percayakan kepada kami acara berharga yang anda tunggu-tunggu.{" "}
               <br /> Kami menjaga kepercayaan dengan se-profesional mungkin.
             </p>
           </div>
           <div className="w-fit py-10 mx-auto">
-            <Link href="contact-sales" passHref>
+            <Link href="about" passHref>
               <button className="w-full lg:w-fit border-2 antialiased hover:text-indigo-600 text-[#e7e7e7] border-transparent bg-gradient-to-tr from-indigo-400 to-indigo-600 font-semibold rounded hover:border-indigo-500 hover:bg-none py-2 px-7 transition-all duration-200 ">
                 About Us
               </button>

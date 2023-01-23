@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 const Clients = () => {
   const [number, setNumber] = useState(0);
@@ -16,7 +17,12 @@ const Clients = () => {
 
   return (
     <>
-      <div className="py-14 lg:py-24 w-full h-full">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.1 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1, delay: 0.4 }}
+        className="py-14 lg:py-24 w-full h-full"
+      >
         <p className="w-full px-4 text-gray-600 lg:w-2/6 mx-auto text-center py-10 capitalize text-lg">
           sebuah pencapaian besar kami,
           <br /> dengan menjaga kepercayaan semua client
@@ -47,7 +53,7 @@ const Clients = () => {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

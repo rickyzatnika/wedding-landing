@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  @apply bg-transparent w-3;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-gradient-to-tr from-indigo-600 to-indigo-100 h-24 rounded-3xl;
+}
+
 body {
   font-family: Inter, "sans-serif";
   background-color: #fefcf3;
