@@ -96,22 +96,7 @@ const Faq = () => {
                 </Link>{" "}
                 .
                 <br />
-                Konfirmasikan kepada admin paket undangan pada halaman{" "}
-                <Link
-                  href="pricing"
-                  passHref
-                  className="text-blue-400 border-b italic border-blue-400"
-                >
-                  Pricing
-                </Link>{" "}
-                dan design undangan pada halaman{" "}
-                <Link
-                  href="portfolio"
-                  passHref
-                  className="text-blue-400 border-b italic border-blue-400"
-                >
-                  Portfolio
-                </Link>{" "}
+                Konfirmasikan kepada admin paket undangan dan design undangan
                 yang anda pilih, setelah itu pengerjaan web akan kami proses.
               </p>
               <br />
@@ -460,8 +445,8 @@ const Faq = () => {
             <div className="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
               <p className="mb-2 text-gray-500 dark:text-gray-400 leading-relaxed">
                 Sayangnya tidak :( <br />
-                Fitur send whatsapp otomatis hanya bisa di setting untuk satu
-                nomor saja, yaitu nomor khusus pada system nya.
+                Fitur send whatsapp otomatis hanya bisa untuk satu nomor saja,
+                yaitu nomor khusus pada system nya.
               </p>
             </div>
           </div>
