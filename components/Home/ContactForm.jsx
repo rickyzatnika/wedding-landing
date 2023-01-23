@@ -92,7 +92,7 @@ const ContactForm = () => {
                   <span className="text-sm">
                     <HiOutlineMail />
                   </span>
-                  <span className="text-sm py-2 text-indigo-500">
+                  <span className="text-sm py-2 text-indigo-500/80">
                     rickyzatnika91@gmail.com
                   </span>
                 </div>
@@ -100,7 +100,7 @@ const ContactForm = () => {
                   <span className="text-sm">
                     <HiOutlineDevicePhoneMobile />
                   </span>
-                  <span className="text-sm py-2 text-indigo-500">
+                  <span className="text-sm py-2 text-indigo-500/80">
                     0895-7003-20007
                   </span>
                 </div>
@@ -108,7 +108,7 @@ const ContactForm = () => {
                   <span className="text-sm">
                     <HiOutlineDevicePhoneMobile />
                   </span>
-                  <span className="text-sm py-2 text-indigo-500">
+                  <span className="text-sm py-2 text-indigo-500/80">
                     0813-9495-9900
                   </span>
                 </div>
@@ -116,7 +116,7 @@ const ContactForm = () => {
                   <span className="text-sm">
                     <FaPhoneVolume />
                   </span>
-                  <span className="text-sm py-2 text-indigo-500">
+                  <span className="text-sm py-2 text-indigo-500/80">
                     022-2511-240
                   </span>
                 </div>
@@ -126,15 +126,19 @@ const ContactForm = () => {
               <h1 className="text-md  text-gray-700/80">Social Links</h1>
               <div className="flex  flex-col items-start pt-4 leading-8">
                 <Link href="https://instagram.com" passHref target="_blank">
-                  <span className="text-sm py-2 text-indigo-500">
+                  <span className="text-sm py-2 text-indigo-500/80">
                     Instagram
                   </span>
                 </Link>
                 <Link href="https://facebook.com" passHref target="_blank">
-                  <span className="text-sm py-2 text-indigo-500">Facebook</span>
+                  <span className="text-sm py-2 text-indigo-500/80">
+                    Facebook
+                  </span>
                 </Link>
                 <Link href="https://telegram.com" passHref target="_blank">
-                  <span className="text-sm py-2 text-indigo-500">Telegram</span>
+                  <span className="text-sm py-2 text-indigo-500/80">
+                    Telegram
+                  </span>
                 </Link>
               </div>
             </div>
