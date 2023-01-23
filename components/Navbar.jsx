@@ -70,12 +70,10 @@ const Navbar = () => {
             transition={{ duration: 0.4, delay: 0.2 }}
             className="text-xl lg:text-base lg:text-md poppins font-semibold lg:font-normal text-[#555] hover:text-indigo-500 transition-all duration-200 ease-linear antialiased "
           >
-            <Link href="features" passHref>
+            <Link href="/features" passHref>
               <span
                 className={
-                  router.pathname === "features"
-                    ? "text-indigo-500  lg:border-b border-indigo-500"
-                    : ""
+                  router.pathname === "/features" ? "text-indigo-500  " : ""
                 }
               >
                 Features
@@ -88,12 +86,10 @@ const Navbar = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-xl lg:text-base lg:text-md poppins font-semibold lg:font-normal text-[#555] hover:text-indigo-500 transition-all duration-200 ease-linear antialiased"
           >
-            <Link href="portfolio" passHref>
+            <Link href="/portfolio" passHref>
               <span
                 className={
-                  router.pathname === "portfolio"
-                    ? "text-indigo-500 lg:border-b border-indigo-500"
-                    : ""
+                  router.pathname === "/portfolio" ? "text-indigo-500 " : ""
                 }
               >
                 Portfolio
@@ -106,12 +102,10 @@ const Navbar = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-xl pr-0 lg:pr-8 lg:text-base  lg:text-md poppins font-semibold lg:font-normal text-[#555] hover:text-indigo-500 transition-all duration-200 ease-linear antialiased"
           >
-            <Link href="pricing" passHref>
+            <Link href="/pricing" passHref>
               <span
                 className={
-                  router.pathname === "pricing"
-                    ? "text-indigo-500  lg:border-b border-indigo-500"
-                    : ""
+                  router.pathname === "/pricing" ? "text-indigo-500 " : ""
                 }
               >
                 Pricing
