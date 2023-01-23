@@ -70,10 +70,10 @@ const Navbar = () => {
             transition={{ duration: 0.4, delay: 0.2 }}
             className="text-xl lg:text-base lg:text-md poppins font-semibold lg:font-normal text-[#555] hover:text-indigo-500 transition-all duration-200 ease-linear antialiased "
           >
-            <Link href="#features" passHref>
+            <Link href="features" passHref>
               <span
                 className={
-                  router.pathname === "#features"
+                  router.pathname === "features"
                     ? "text-indigo-500  lg:border-b border-indigo-500"
                     : ""
                 }
@@ -106,10 +106,10 @@ const Navbar = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-xl pr-0 lg:pr-8 lg:text-base  lg:text-md poppins font-semibold lg:font-normal text-[#555] hover:text-indigo-500 transition-all duration-200 ease-linear antialiased"
           >
-            <Link href="#pricing" passHref>
+            <Link href="pricing" passHref>
               <span
                 className={
-                  router.pathname === "#pricing"
+                  router.pathname === "pricing"
                     ? "text-indigo-500  lg:border-b border-indigo-500"
                     : ""
                 }
@@ -119,7 +119,7 @@ const Navbar = () => {
             </Link>
           </motion.li>
           <div className="w-full lg:w-fit pt-24 lg:pt-0">
-            <Link href="contact-sales" passHref>
+            <Link href="https://wa.wizard.id/0771c2" passHref>
               <button className="w-full lg:w-fit border-2 antialiased text-indigo-600 hover:text-[#e7e7e7] hover:bg-gradient-to-tr from-indigo-400 to-indigo-600 font-semibold rounded border-indigo-500 hover:border-white py-2 px-4 transition-all duration-200 ease-linear">
                 Contact Sales
               </button>

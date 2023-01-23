@@ -88,7 +88,7 @@ const Faq = () => {
               <p className="mb-2 text-gray-500 dark:text-gray-400 leading-relaxed">
                 Hubungi admin sales kami pada navigasi bar diatas atau{" "}
                 <Link
-                  href="/contact-sales"
+                  href="https://wa.wizard.id/0771c2"
                   className="text-blue-400 border-b italic border-blue-400"
                   passHref
                 >
