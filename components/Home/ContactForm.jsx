@@ -68,7 +68,7 @@ const ContactForm = () => {
                 <Link href="/" passHref>
                   <span className="text-sm py-2 text-indigo-500/80">Home</span>
                 </Link>
-                <Link href="#features">
+                <Link href="features">
                   <span className="text-sm py-2 text-indigo-500/80">
                     Features
                   </span>
@@ -78,7 +78,7 @@ const ContactForm = () => {
                     Portfolio
                   </span>
                 </Link>
-                <Link href="#pricing">
+                <Link href="pricing">
                   <span className="text-sm py-2 text-indigo-500/80">
                     Pricing
                   </span>
