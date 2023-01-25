@@ -15,7 +15,7 @@ const PricingCard = () => {
           transition={{ duration: 1, delay: 0.5 }}
           className="text-3xl lg:text-4xl text-center text-gray-600 capitalize py-10 lg:py-20"
         >
-          paket dan harga
+          PriceList
         </motion.h1>
         <motion.div
           initial={{ opacity: 0, y: 90 }}
