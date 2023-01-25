@@ -51,7 +51,7 @@ const AboutSection = () => {
               onClick={() => setShow(!show)}
               className="py-2 px-3 antialiased text-gray-500   hover:text-gray-700"
             >
-              Read More ..
+              {!show ? <span>Read More ..</span> : <span>Hide ..</span>}
             </button>
           </motion.div>
           <motion.div
