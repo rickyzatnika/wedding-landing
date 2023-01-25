@@ -7,3 +7,4 @@ export { default as CounterAnimate } from "./Home/CounterAnimate";
 export { default as Faq } from "./Home/Faq";
 export { default as PricingCard } from "./PricingCard";
 export { default as ContactForm } from "./Home/ContactForm";
+export { default as Portfolio } from "./Home/Portfolio";

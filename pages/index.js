@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   Headers,
@@ -9,6 +8,7 @@ import {
   Faq,
   PricingCard,
   ContactForm,
+  Portfolio,
 } from "../components";
 
 export default function Home() {
@@ -38,6 +38,7 @@ export default function Home() {
       <AboutSection />
       <Intro />
       <WhyChooseUs />
+      <Portfolio />
       <CounterAnimate />
       <PricingCard />
       <Faq />

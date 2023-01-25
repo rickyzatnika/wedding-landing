@@ -70,14 +70,8 @@ const Navbar = () => {
             transition={{ duration: 0.4, delay: 0.2 }}
             className="text-xl lg:text-base lg:text-md poppins font-semibold lg:font-normal text-[#555] hover:text-indigo-500 transition-all duration-200 ease-linear antialiased "
           >
-            <Link href="/features" passHref>
-              <span
-                className={
-                  router.pathname === "/features" ? "text-indigo-500  " : ""
-                }
-              >
-                Features
-              </span>
+            <Link href="#features" passHref>
+              Features
             </Link>
           </motion.li>
           <motion.li
@@ -86,14 +80,8 @@ const Navbar = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-xl lg:text-base lg:text-md poppins font-semibold lg:font-normal text-[#555] hover:text-indigo-500 transition-all duration-200 ease-linear antialiased"
           >
-            <Link href="/portfolio" passHref>
-              <span
-                className={
-                  router.pathname === "/portfolio" ? "text-indigo-500 " : ""
-                }
-              >
-                Portfolio
-              </span>
+            <Link href="#portfolio" passHref>
+              Portfolio
             </Link>
           </motion.li>
           <motion.li
@@ -102,14 +90,8 @@ const Navbar = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-xl pr-0 lg:pr-8 lg:text-base  lg:text-md poppins font-semibold lg:font-normal text-[#555] hover:text-indigo-500 transition-all duration-200 ease-linear antialiased"
           >
-            <Link href="/pricing" passHref>
-              <span
-                className={
-                  router.pathname === "/pricing" ? "text-indigo-500 " : ""
-                }
-              >
-                Pricing
-              </span>
+            <Link href="#pricing" passHref>
+              Pricing
             </Link>
           </motion.li>
           <div className="w-full lg:w-fit pt-24 lg:pt-0">
