@@ -8,15 +8,19 @@ import {
 const PricingCard = () => {
   return (
     <>
-      <div id="pricing" className="w-full h-full pb-40 px-4 lg:px-14 ">
-        <motion.h1
+      <div id="pricing" className="w-full h-full py-10 lg:py-40 px-4 lg:px-14 ">
+        <motion.div
           initial={{ opacity: 0, y: -100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="text-3xl lg:text-4xl text-center text-gray-600 capitalize py-10 lg:py-20"
+          className="text-center py-10 lg:py-20 capitalize"
         >
-          PriceList
-        </motion.h1>
+          <h1 className="text-3xl lg:text-4xl text-gray-600  ">PriceList</h1>
+          <p className="py-1 text-gray-500/80">
+            Daftar Harga dan Paket bisa disesuaikan dengan fitur-fitur yang anda
+            inginkan
+          </p>
+        </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 90 }}
           whileInView={{ opacity: 1, y: 0 }}
