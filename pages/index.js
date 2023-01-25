@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Head from "next/head";
 import {
   Headers,
   AboutSection,
@@ -30,6 +31,9 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Ryza Digital invitation</title>
+      </Head>
       <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate">
         <motion.div variants={fadeInUp}>
           <Headers />

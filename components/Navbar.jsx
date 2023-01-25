@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
@@ -47,13 +48,25 @@ const Navbar = () => {
       >
         <div
           onClick={() => setShowMenus(false)}
-          className="relative z-50  text-indigo-800 tracking-tighter"
+          className=" z-50 poppins text-indigo-800 "
         >
-          <Link href="/" passHref className="text-3xl lg:text-4xl">
-            <span className="font-bold  text-indigo-600">d</span>
-            Books
+          <Link
+            href="/"
+            passHref
+            className="text-4xl -tracking-tighter flex items-center"
+          >
+            R<span className="font-bold  text-indigo-600">Y</span>Z
+            <Image
+              src="/images/logo.png"
+              alt=""
+              width={35}
+              height={35}
+              objectFit="contain"
+            />
           </Link>
-          <p className="pl-1 text-sm text-indigo-800">Undangan Digital</p>
+          <p className="pl-1 text-sm tracking-wide text-indigo-800">
+            Digital Invitation
+          </p>
         </div>
 
         <ul
