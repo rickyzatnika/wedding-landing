@@ -31,44 +31,44 @@ const Portfolio = () => {
         </motion.div>
         <div className="w-full h-full grid items-center justify-center gap-12 lg:gap-2 py-14 grid-cols-1 lg:grid-cols-12">
           <div className=" col-span-1 lg:col-span-4">
-            <div className="w-full flex flex-nowrap gap-2">
+            <div className="w-full flex flex-col lg:flex-row flex-nowrap gap-2">
               <motion.button
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.3 }}
                 onClick={() => setVisible("content-1")}
-                className={`flex flex-col flex-nowrap items-center bg-[#212121] w-fit  justify-around h-[520px] ${
+                className={`flex flex-row gap-4 lg:gap-0  lg:flex-col flex-nowrap items-start lg:items-center bg-[#212121] w-full lg:w-fit  justify-between py-2 px-2 lg:px-0 lg:justify-around h-full lg:h-[520px] ${
                   visible === "content-1"
                     ? "text-indigo-500 "
                     : "text-[#e7e7e7]"
                 }`}
               >
                 <span>01</span>
-                <span className="-rotate-90 ">Rio & Zahra </span>
+                <span className="rotate-0 lg:-rotate-90 ">Rio & Zahra </span>
               </motion.button>
               <motion.button
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.6 }}
                 onClick={() => setVisible("content-2")}
-                className={`flex flex-col flex-nowrap items-center  bg-[#212121] w-fit  justify-around h-[520px] ${
+                className={`flex  flex-row gap-4 lg:gap-0 lg:flex-col flex-nowrap items-start lg:items-center  bg-[#212121] w-full lg:w-fit  justify-between py-2 px-2 lg:px-0  lg:justify-around h-full lg:h-[520px] ${
                   visible === "content-2" ? "text-amber-600" : "text-[#e7e7e7]"
                 }`}
               >
                 <span>02</span>
-                <span className="-rotate-90">Ridwan & Winda </span>
+                <span className="rotate-0 lg:-rotate-90">Ridwan & Winda </span>
               </motion.button>
               <motion.button
                 initial={{ opacity: 0, y: 80 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.9 }}
                 onClick={() => setVisible("content-3")}
-                className={`flex flex-col flex-nowrap items-center  bg-[#212121] w-fit  justify-around h-[520px] ${
+                className={`flex  flex-row gap-4 lg:gap-0 lg:flex-col flex-nowrap items-start lg:items-center  bg-[#212121] w-full lg:w-fit  justify-between py-2 px-2 lg:px-0  lg:justify-around h-full lg:h-[520px] ${
                   visible === "content-3" ? "text-purple-500" : "text-[#e7e7e7]"
                 }`}
               >
                 <span>03</span>
-                <span className="-rotate-90">Ridwan Winda </span>
+                <span className="rotate-0 lg:-rotate-90">Ridwan Winda </span>
               </motion.button>
             </div>
           </div>
@@ -91,7 +91,7 @@ const Portfolio = () => {
                     >
                       -01
                     </span>
-                    <div className="flex items-center w-full justify-between">
+                    <div className="flex flex-col lg:flex-row items-start lg:items-center w-full justify-between">
                       <p className="text-gray-600">Web Undangan Private</p>
                       <p className="text-gray-600">Kode Undangan : 2fc7</p>
                     </div>
