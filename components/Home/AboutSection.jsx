@@ -1,9 +1,10 @@
 import Image from "next/legacy/image";
-import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const AboutSection = () => {
+  const [show, setShow] = useState(false);
+
   return (
     <>
       <div className="w-full h-full bg-gradient-to-r from-indigo-800/50 relative to-transparent py-20">
@@ -16,10 +17,10 @@ const AboutSection = () => {
             transition={{ duration: 0.9, delay: 0.4 }}
             className="col-span-1 lg:col-span-6 px-8 space-y-6"
           >
-            <h3 className="text-3xl w-fit pb-2 text-indigo-700 poppins">
+            <h3 className="text-3xl w-fit pb-2 text-white/80 poppins">
               Tentang Kami
             </h3>
-            <div className="pb-6 px-2 space-y-3">
+            <div className=" px-2 space-y-3">
               <p className="text-[#444] poppins text-lg antialiased leading-relaxed">
                 Kami adalah perusahaan teknologi, yang khususnya untuk saat ini
                 bergerak di bidang jasa pembuatan Website untuk kebutuhan acara
@@ -30,12 +31,28 @@ const AboutSection = () => {
                 acara dan undangan anda terorganisir dengan lebih mudah, cepat
                 dan praktis.
               </p>
+              {show && (
+                <>
+                  <p className="text-[#444] poppins antialiased text-lg leading-relaxed">
+                    Berdiri pada pertengahan Tahun 2021 kami mulai merintis
+                    usaha di bidang digital teknologi khusunya pengembangan
+                    website.
+                  </p>{" "}
+                  <p className="text-[#444] poppins antialiased text-lg leading-relaxed">
+                    Perusahaan mengadopsi teknologi digital inovatif untuk
+                    membuat perubahan budaya dan operasional yang beradaptasi
+                    lebih baik dengan perubahan permintaan pelanggan.
+                  </p>
+                </>
+              )}
             </div>
-            <Link href="about" passHref>
-              <button className="py-3 px-7 border border-white/40 antialiased text-[#dfdddd] hover:text-[#e7e7e7]  hover:bg-gradient-to-br from-indigo-400 to-indigo-600 rounded hover:border-indigo-500 bg-none transition-all duration-200">
-                Read More ..
-              </button>
-            </Link>
+
+            <button
+              onClick={() => setShow(!show)}
+              className="py-2 px-3 antialiased text-gray-500   hover:text-gray-700"
+            >
+              Read More ..
+            </button>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 100 }}

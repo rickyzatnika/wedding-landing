@@ -17,9 +17,9 @@ const Headers = () => {
             </p>
           </div>
           <div className="w-fit py-10 mx-auto">
-            <Link href="about" passHref>
+            <Link href="https://wa.wizard.id/0771c2" passHref>
               <button className="w-full lg:w-fit border-2 antialiased hover:text-indigo-600 text-[#e7e7e7] border-transparent bg-gradient-to-tr from-indigo-400 to-indigo-600 font-semibold rounded hover:border-indigo-500 hover:bg-none py-2 px-7 transition-all duration-200 ">
-                About Us
+                Contact Us
               </button>
             </Link>
           </div>
