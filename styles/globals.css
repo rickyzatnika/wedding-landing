@@ -17,3 +17,16 @@ body {
 .poppins {
   font-family: "Poppins", sans-serif;
 }
+
+.anima {
+  animation: slide 5s infinite alternate-reverse linear;
+}
+
+@keyframes slide {
+  0% {
+    left: -10%;
+  }
+  100% {
+    left: 0;
+  }
+}

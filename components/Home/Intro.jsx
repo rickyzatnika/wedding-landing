@@ -4,7 +4,17 @@ import { motion } from "framer-motion";
 const Intro = () => {
   return (
     <>
-      <div className="w-full h-full my-20 lg:my-40 px-6 lg:px-20">
+      <div className="w-full h-full my-20 lg:my-40 px-6 lg:px-20 relative">
+        <div className="absolute left-0 top-0 -z-50 opacity-30 anima">
+          <Image
+            src="/images/baruleud.png"
+            alt=""
+            width={150}
+            height={125}
+            objectFit="contain"
+            objectPosition="center"
+          />
+        </div>
         <div className="grid grid-cols-1 lg:grid-cols-12 text-center gap-8 lg:gap-1 items-center justify-center">
           <motion.div
             initial={{ opacity: 0, y: 90 }}

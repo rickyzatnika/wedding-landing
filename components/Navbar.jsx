@@ -55,16 +55,16 @@ const Navbar = () => {
             passHref
             className="text-4xl -tracking-tighter flex items-center"
           >
-            R<span className="font-bold  text-indigo-600">Y</span>Z
             <Image
-              src="/images/logo.png"
+              src="/images/webhouse-logo.png"
               alt=""
-              width={35}
-              height={35}
+              width={185}
+              height={50}
               objectFit="contain"
+              priority
             />
           </Link>
-          <p className="pl-1 text-sm tracking-wide text-indigo-800">
+          <p className="pl-1 text-sm tracking-widest text-indigo-800">
             Digital Invitation
           </p>
         </div>
