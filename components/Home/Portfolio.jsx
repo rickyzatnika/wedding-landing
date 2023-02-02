@@ -68,7 +68,7 @@ const Portfolio = () => {
                 }`}
               >
                 <span>03</span>
-                <span className="rotate-0 lg:-rotate-90">Ridwan Winda </span>
+                <span className="rotate-0 lg:-rotate-90">Rangga & Rina</span>
               </motion.button>
             </div>
           </div>
@@ -92,8 +92,11 @@ const Portfolio = () => {
                       -01
                     </span>
                     <div className="flex flex-col lg:flex-row items-start lg:items-center w-full justify-between">
-                      <p className="text-gray-600">Web Undangan Private</p>
-                      <p className="text-gray-600">Kode Undangan : 2fc7</p>
+                      <p className="text-gray-600">
+                        {" "}
+                        Sample Design Web Undangan Private
+                      </p>
+                      <p className="text-gray-600">Kode Undangan : 13b2</p>
                     </div>
                   </div>
                   <Image
@@ -147,7 +150,10 @@ const Portfolio = () => {
                       -02
                     </span>
                     <div className="flex items-center w-full justify-between">
-                      <p className="text-gray-600">Web Undangan Multi</p>
+                      <p className="text-gray-600">
+                        {" "}
+                        Sample Design Web Undangan Multi
+                      </p>
                     </div>
                   </div>
                   <Image
@@ -193,7 +199,7 @@ const Portfolio = () => {
                     <span
                       className={` ${
                         visible === "content-3"
-                          ? "text-indigo-500 text-xl font-semibold"
+                          ? "text-purple-500 text-xl font-semibold"
                           : "text-gray-600"
                       }`}
                     >
@@ -201,12 +207,12 @@ const Portfolio = () => {
                     </span>
                     <div className="flex items-center w-full justify-between">
                       <p className="text-gray-600">
-                        Web Undangan dengan Atau tanpa Kode Unik
+                        Sample Design Rangga & Rina Wedding
                       </p>
                     </div>
                   </div>
                   <Image
-                    src="/images/kode-unik.png"
+                    src="/images/rangga-rina.png"
                     alt=""
                     width={50}
                     height={25}
@@ -218,14 +224,14 @@ const Portfolio = () => {
                   <p className="text-gray-500">
                     Tampilkan nama tamu undangan pada halaman web undangan dan
                     form input konfirmasi kehadiran yang secara real-time
-                    terhubung ke dashboard anda.
+                    terhubung ke dashboard.
                   </p>
                   <div className="flex group items-center gap-2 text-gray-500">
                     <Link
                       className=""
                       passHref
                       target="_blank"
-                      href="https://ridwan-winda.inkara.id/2fc7"
+                      href="https://rangga-rina.inkara.id"
                     >
                       Link Demo
                     </Link>
